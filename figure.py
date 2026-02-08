@@ -64,3 +64,37 @@ def triangle_ravnobedren(x, y, a, b):
     turtle.left(150)
     turtle.forward(b)
     turtle.end_fill()
+
+
+def square(x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('blue')
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.end_fill()
+
+def rectangle(x, y, a, b):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('yellow')
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.end_fill()
+
