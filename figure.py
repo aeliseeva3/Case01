@@ -39,3 +39,28 @@ def parallelogram(x, y, a, b, c):
     turtle.left(c1)
     turtle.down()
     turtle.end_fill()
+
+
+def triangle_ravnostoron(x, y, a):
+    turtle.up()
+    turtle.goto(x, y)
+    turtle.down()
+    turtle.fillcolor('green')
+    turtle.begin_fill()
+    for n in range(3):
+        turtle.forward(a)
+        turtle.left(120)
+    turtle.end_fill()
+
+def triangle_ravnobedren(x, y, a, b):
+    turtle.up()
+    turtle.goto(x, y)
+    turtle.down()
+    turtle.fillcolor('red')
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.left(150)
+    turtle.forward(b)
+    turtle.left(150)
+    turtle.forward(b)
+    turtle.end_fill()
