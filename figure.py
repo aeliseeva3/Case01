@@ -1,7 +1,7 @@
 # Case-study #1
 # Developers: Eliseeva A., Kovalenko A., Leonva A.
 #
-
+import math
 import turtle
 
 def rhombus(x, y, a, b):
@@ -96,5 +96,19 @@ def rectangle(x, y, a, b):
     turtle.right(90)
     turtle.forward(b)
     turtle.right(90)
+    turtle.end_fill()
+
+def triangle_pryamougoln(x, y, a, b, c):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('orange')
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    c=math.sqrt(a**2 + b**2)
+    turtle.right(120)
+    turtle.forward(c)
     turtle.end_fill()
 
