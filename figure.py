@@ -172,20 +172,20 @@ def triangle_pryamougoln(x, y, a, b):
 
 def dog():
     '''
-    Function, drawing dog.
+    dog function.
     :return: None
     '''
-    turtle.setposition(0,0)
-    square(0,0,25)
-    square(75,0,25)
-    rectangle(0,50,100,50)
-    rectangle(-25,75,50,25)
-    triangle_ravnostoron(0,75,25)
-    triangle_ravnobedren(75,50,50,25)
+    square(-150,-300,50)
+    square(100,-300,50)
+    rectangle(-150,-190,300,110)
+    rectangle(-200,-140,100,50)
+    triangle_ravnostoron(-150,-140,50)
+    triangle_ravnobedren(100,-190,100,75)
+
 
 def bird():
     '''
-    Function, drawing bird.
+    Bird function.
     :return: None
     '''
     square(200,0, 25)
@@ -200,4 +200,4 @@ def bird():
 #dog()
 #bird()
 
-
+dog()
