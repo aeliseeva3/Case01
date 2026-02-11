@@ -3,6 +3,7 @@
 #
 
 import turtle
+import math
 
 def rhombus(x, y, a, b):
     '''
@@ -86,13 +87,18 @@ def triangle_ravnobedren(x, y, a, b):
     '''
     turtle.up()
     turtle.goto(x, y)
+    turtle.down()
     turtle.fillcolor('red')
     turtle.begin_fill()
-    turtle.down()
-    turtle.goto(x+a, y)
-    turtle.goto(x+a/2, y+b)
+    turtle.forward(a)
+    h=math.sqrt(b**2-(a/2)**2)
+    angle=math.degrees(math.atan2(h, a/2))
+    turtle.left(180-angle)
+    turtle.forward(b)
+    turtle.left(2*angle)
+    turtle.forward(b)
     turtle.end_fill()
-    turtle.goto(x, y)
+    turtle.left(180-angle)
 
 def square(x, y, a):
     '''
@@ -151,14 +157,47 @@ def triangle_pryamougoln(x, y, a, b):
     :return: None
     '''
     turtle.up()
-    turtle.setposition(x, y)
+    turtle.setposition(x,y)
     turtle.down()
     turtle.fillcolor('orange')
     turtle.begin_fill()
     turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(b)
-    turtle.goto(x, y)
     turtle.left(90)
+    turtle.forward(b)
+    h=math.sqrt(a**2+b**2)
+    angle=math.degrees(math.atan2(b,a))
+    turtle.left(90+angle)
+    turtle.forward(h)
     turtle.end_fill()
+
+def dog():
+    '''
+    Function, drawing dog.
+    :return: None
+    '''
+    turtle.setposition(0,0)
+    square(0,0,25)
+    square(75,0,25)
+    rectangle(0,50,100,50)
+    rectangle(-25,75,50,25)
+    triangle_ravnostoron(0,75,25)
+    triangle_ravnobedren(75,50,50,25)
+
+def bird():
+    '''
+    Function, drawing bird.
+    :return: None
+    '''
+    square(200,0, 25)
+    turtle.right(90)
+    triangle_pryamougoln(250,100,100,50)
+    triangle_ravnobedren(250,100,50, 25)
+    turtle.right(90)
+    parallelogram(250, 100, 50, 25, 65)
+    turtle.done
+
+#if __name__ == '__main__':
+#dog()
+#bird()
+
 
