@@ -196,8 +196,19 @@ def bird():
     parallelogram(250, 100, 50, 25, 65)
     turtle.done
 
+def candle():
+    turtle.setheading(270)
+    triangle_ravnobedren(300, -100, 200, 260)
+    turtle.setheading(0)
+    triangle_pryamougoln(300, -300, 240,100 )
+    turtle.setheading(90)
+    triangle_pryamougoln(540, -200, 100,240 )
+    turtle.setheading(60)
+    rhombus(420,-100, 50, 60)
+
 #if __name__ == '__main__':
 #dog()
 #bird()
 
 dog()
+candle()
