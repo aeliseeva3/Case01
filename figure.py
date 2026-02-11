@@ -182,19 +182,17 @@ def dog():
     triangle_ravnostoron(-150,-140,50)
     triangle_ravnobedren(100,-190,100,75)
 
-
 def bird():
     '''
     Bird function.
     :return: None
     '''
-    square(200,0, 25)
-    turtle.right(90)
-    triangle_pryamougoln(250,100,100,50)
-    triangle_ravnobedren(250,100,50, 25)
-    turtle.right(90)
-    parallelogram(250, 100, 50, 25, 65)
-    turtle.done
+    square(-550, 50, 50)
+    triangle_pryamougoln(-550,50,100,200)
+    turtle.setheading(0)
+    triangle_ravnobedren(-450, 250, 100, 75)
+    turtle.setheading(180)
+    parallelogram(-450, 250, 100, 50, 63)
 
 def candle():
     turtle.setheading(270)
@@ -208,7 +206,5 @@ def candle():
 
 #if __name__ == '__main__':
 #dog()
-#bird()
-
-dog()
-candle()
+bird()
+#candle()
