@@ -202,9 +202,33 @@ def candle():
     turtle.setheading(90)
     triangle_pryamougoln(540, -200, 100,240 )
     turtle.setheading(60)
-    rhombus(420,-100, 50, 60)
+    rhombus(420,-100, 60, 60)
+
+def fish():
+    turtle.setheading(160)
+    triangle_ravnostoron(300,150, 100)
+    turtle.setheading(0)
+    triangle_pryamougoln(300, 150, 120, 100)
+    turtle.setheading(90)
+    rectangle(420, 150, 100, 170)
+    turtle.setheading(90)
+    triangle_pryamougoln(590, 90, 60,50 )
+    turtle.setheading(235)
+    triangle_ravnobedren(520, 150, 100, 70)
+    turtle.setheading(0)
+    square(590, 170, 80)
+    turtle.setheading(270)
+    triangle_pryamougoln(590, 250, 80, 80)
+    turtle.setheading(105)
+    rhombus(570, 250, 60, 60)
+
+
+
+
+
 
 #if __name__ == '__main__':
 #dog()
-bird()
+#bird()
 #candle()
+fish()
