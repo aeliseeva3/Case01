@@ -4,6 +4,7 @@
 
 import turtle
 import math
+turtle.setup(500,500)
 
 def rhombus(x, y, a, b):
     '''
@@ -172,7 +173,7 @@ def triangle_pryamougoln(x, y, a, b):
 
 def dog():
     '''
-    dog function
+    Dog function.
     :return: None
     '''
     triangle_pryamougoln(-150,-400,75, 75)
@@ -202,6 +203,10 @@ def bird():
     parallelogram(-450, 250, 100, 50, 63)
 
 def candle():
+    '''
+    Candle function.
+    :return: None
+    '''
     turtle.setheading(270)
     triangle_ravnobedren(300, -100, 200, 260)
     turtle.setheading(0)
@@ -212,6 +217,10 @@ def candle():
     rhombus(420,-100, 60, 60)
 
 def fish():
+    '''
+    Fish function.
+    :return: None
+    '''
     turtle.setheading(160)
     triangle_ravnostoron(300,150, 100)
     turtle.setheading(0)
@@ -229,13 +238,54 @@ def fish():
     turtle.setheading(105)
     rhombus(570, 250, 60, 60)
 
+def swan():
+    '''
+    Swan function.
+    :return: None
+    '''
+    triangle_pryamougoln(-550, -120, 60, 60)
+    turtle.setheading(270)
+    parallelogram(-490, -60, 90, 50, 63)
+    turtle.right(27)
+    square(-445, -173, 50)
+    turtle.left(45)
+    triangle_ravnobedren(-513, -195, 70, 50)
+    turtle.right(178)
+    triangle_ravnobedren(-422, -290, 100, 75)
+    turtle.left(37)
+    triangle_ravnobedren(-321, -284, 160, 100)
+    turtle.left(60)
+    triangle_ravnostoron(-340, -136, 130)
+
+def airplane():
+    '''
+    Airplane function.
+    :return: None
+    '''
+    turtle.setheading(0)
+    triangle_pryamougoln(-200, 250, 100, 150)
+    turtle.left(123)
+    turtle.right(270)
+    triangle_pryamougoln(-140, 150, 100, 60)
+    turtle.left(60)
+    square(-140 ,250, 100)
+    turtle.right(90)
+    triangle_pryamougoln(-40, 290, 100, 100)
+    turtle.left(45)
+    triangle_pryamougoln(60, 190, 100, 100)
+    turtle.right(45)
+    triangle_ravnobedren(21, 149, 80, 57)
+    parallelogram(101, 149, 80, 57, 134)
 
 
 
 
 
 #if __name__ == '__main__':
-dog()
+swan()
+airplane()     
 bird()
+dog()
 candle()
 fish()
+
