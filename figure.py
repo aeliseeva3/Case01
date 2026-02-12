@@ -176,6 +176,7 @@ def dog():
     Dog function.
     :return: None
     '''
+    turtle.setheading(0)
     triangle_pryamougoln(-150,-400,75, 75)
     turtle.setheading(0)
     triangle_pryamougoln(-75,-325,150,150)
@@ -188,13 +189,13 @@ def dog():
     triangle_ravnobedren(75,-250,100,75)
     turtle.setheading(48)
     parallelogram(75,-250,75,75,42)
-    turtle.setheading(0)
 
 def bird():
     '''
     Bird function.
     :return: None
     '''
+    turtle.setheading(0)
     square(-550, 50, 50)
     triangle_pryamougoln(-550,50,100,200)
     turtle.setheading(0)
@@ -288,4 +289,6 @@ bird()
 dog()
 candle()
 fish()
+
+turtle.done()
 
