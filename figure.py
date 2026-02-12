@@ -172,15 +172,22 @@ def triangle_pryamougoln(x, y, a, b):
 
 def dog():
     '''
-    dog function.
+    dog function
     :return: None
     '''
-    square(-150,-300,50)
-    square(100,-300,50)
-    rectangle(-150,-190,300,110)
-    rectangle(-200,-140,100,50)
-    triangle_ravnostoron(-150,-140,50)
-    triangle_ravnobedren(100,-190,100,75)
+    triangle_pryamougoln(-150,-400,75, 75)
+    turtle.setheading(0)
+    triangle_pryamougoln(-75,-325,150,150)
+    turtle.right(45)
+    triangle_pryamougoln(0,-250,150,150)
+    turtle.left(90)
+    triangle_ravnobedren(-150,-250,100,65)
+    turtle.setheading(0)
+    square(0,-325,75)
+    triangle_ravnobedren(75,-250,100,75)
+    turtle.setheading(48)
+    parallelogram(75,-250,75,75,42)
+    turtle.setheading(0)
 
 def bird():
     '''
@@ -228,7 +235,7 @@ def fish():
 
 
 #if __name__ == '__main__':
-#dog()
-#bird()
-#candle()
+dog()
+bird()
+candle()
 fish()
