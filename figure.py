@@ -209,13 +209,13 @@ def candle():
     :return: None
     '''
     turtle.setheading(270)
-    triangle_ravnobedren(300, -100, 200, 260)
+    triangle_ravnobedren(350, -100, 200, 260)
     turtle.setheading(0)
-    triangle_pryamougoln(300, -300, 240,100 )
+    triangle_pryamougoln(350, -300, 240,100 )
     turtle.setheading(90)
-    triangle_pryamougoln(540, -200, 100,240 )
+    triangle_pryamougoln(590, -200, 100,240 )
     turtle.setheading(60)
-    rhombus(420,-100, 60, 60)
+    rhombus(470,-100, 60, 60)
 
 def fish():
     '''
