@@ -4,7 +4,7 @@
 
 import turtle
 import math
-turtle.setup(500,500)
+turtle.setup(600,600)
 
 def rhombus(x, y, a, b):
     '''
@@ -70,7 +70,7 @@ def triangle_ravnostoron(x, y, a):
     turtle.up()
     turtle.goto(x, y)
     turtle.down()
-    turtle.fillcolor('green')
+    turtle.fillcolor('lightcoral')
     turtle.begin_fill()
     for n in range(3):
         turtle.forward(a)
@@ -89,7 +89,7 @@ def triangle_ravnobedren(x, y, a, b):
     turtle.up()
     turtle.goto(x, y)
     turtle.down()
-    turtle.fillcolor('red')
+    turtle.fillcolor('violet')
     turtle.begin_fill()
     turtle.forward(a)
     h=math.sqrt(b**2-(a/2)**2)
@@ -112,7 +112,7 @@ def square(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.fillcolor('blue')
+    turtle.fillcolor('hotpink')
     turtle.begin_fill()
     turtle.forward(a)
     turtle.right(90)
@@ -136,7 +136,7 @@ def rectangle(x, y, a, b):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.fillcolor('yellow')
+    turtle.fillcolor('plum')
     turtle.begin_fill()
     turtle.forward(a)
     turtle.right(90)
@@ -160,7 +160,7 @@ def triangle_pryamougoln(x, y, a, b):
     turtle.up()
     turtle.setposition(x,y)
     turtle.down()
-    turtle.fillcolor('orange')
+    turtle.fillcolor('skyblue')
     turtle.begin_fill()
     turtle.forward(a)
     turtle.left(90)
@@ -177,18 +177,18 @@ def dog():
     :return: None
     '''
     turtle.setheading(0)
-    triangle_pryamougoln(-150,-400,75, 75)
+    triangle_pryamougoln(-150,-300,75, 75)
     turtle.setheading(0)
-    triangle_pryamougoln(-75,-325,150,150)
+    triangle_pryamougoln(-75,-225,150,150)
     turtle.right(45)
-    triangle_pryamougoln(0,-250,150,150)
+    triangle_pryamougoln(0,-150,150,150)
     turtle.left(90)
-    triangle_ravnobedren(-150,-250,100,65)
+    triangle_ravnobedren(-150,-150,100,65)
     turtle.setheading(0)
-    square(0,-325,75)
-    triangle_ravnobedren(75,-250,100,75)
+    square(0,-225,75)
+    triangle_ravnobedren(75,-150,100,75)
     turtle.setheading(48)
-    parallelogram(75,-250,75,75,42)
+    parallelogram(75,-150,75,75,42)
 
 def bird():
     '''
@@ -264,25 +264,20 @@ def airplane():
     :return: None
     '''
     turtle.setheading(0)
-    triangle_pryamougoln(-200, 250, 100, 150)
+    triangle_pryamougoln(-200, 200, 100, 150)
     turtle.left(123)
     turtle.right(270)
-    triangle_pryamougoln(-140, 150, 100, 60)
+    triangle_pryamougoln(-140, 100, 100, 60)
     turtle.left(60)
-    square(-140 ,250, 100)
+    square(-140 ,200, 100)
     turtle.right(90)
-    triangle_pryamougoln(-40, 290, 100, 100)
+    triangle_pryamougoln(-40, 240, 100, 100)
     turtle.left(45)
-    triangle_pryamougoln(60, 190, 100, 100)
+    triangle_pryamougoln(60, 140, 100, 100)
     turtle.right(45)
-    triangle_ravnobedren(21, 149, 80, 57)
-    parallelogram(101, 149, 80, 57, 134)
+    triangle_ravnobedren(20, 99, 80, 57)
+    parallelogram(100, 99, 80, 57, 134)
 
-
-
-
-
-#if __name__ == '__main__':
 swan()
 airplane()     
 bird()
