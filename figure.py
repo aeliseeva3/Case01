@@ -4,7 +4,7 @@
 
 import turtle
 import math
-turtle.setup(600,600)
+turtle.screensize(1000,800)
 
 def rhombus(x, y, a, b):
     '''
@@ -278,12 +278,12 @@ def airplane():
     triangle_ravnobedren(20, 99, 80, 57)
     parallelogram(100, 99, 80, 57, 134)
 
-swan()
-airplane()     
-bird()
-dog()
-candle()
-fish()
+if __name__ == '__main__':
+    swan()
+    airplane()
+    bird()
+    dog()
+    candle()
+    fish()
 
 turtle.done()
-
