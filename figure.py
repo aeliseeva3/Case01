@@ -294,12 +294,12 @@ def airplane():
     parallelogram(100, 99, 80, 57, 134)
 
 
-if __name__ == '__main__':
-    swan()
-    airplane()
-    bird()
-    dog()
-    candle()
-    fish()
+
+swan()
+airplane()
+bird()
+dog()
+candle()
+fish()
 
 turtle.done()
