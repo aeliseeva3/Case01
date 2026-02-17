@@ -294,7 +294,6 @@ def airplane():
     parallelogram(100, 99, 80, 57, 134)
 
 
-
 swan()
 airplane()
 bird()
