@@ -198,6 +198,7 @@ def dog():
     turtle.setheading(48)
     parallelogram(75, -150,75,75,42)
 
+
 def bird():
     '''
     Bird function.
@@ -210,6 +211,7 @@ def bird():
     triangle_ravnobedren(-450, 250, 100, 75)
     turtle.setheading(180)
     parallelogram(-450, 250, 100, 50, 63)
+
 
 def candle():
     '''
@@ -224,6 +226,7 @@ def candle():
     triangle_pryamougoln(590, -200, 100,240 )
     turtle.setheading(60)
     rhombus(470, -100, 60, 60)
+
 
 def fish():
     '''
@@ -247,6 +250,7 @@ def fish():
     turtle.setheading(105)
     rhombus(570, 250, 60, 60)
 
+
 def swan():
     '''
     Swan function.
@@ -265,6 +269,7 @@ def swan():
     triangle_ravnobedren(-321, -284, 160, 100)
     turtle.left(60)
     triangle_ravnostoron(-340, -136, 130)
+
 
 def airplane():
     '''
