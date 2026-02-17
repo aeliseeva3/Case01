@@ -5,7 +5,8 @@
 import turtle
 import math
 
-turtle.screensize(1000, 800)
+turtle.setup(1200, 600)
+turtle.setworldcoordinates(-600, -300, 600, 300)
 
 
 def rhombus(x, y, a, b):
