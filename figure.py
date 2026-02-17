@@ -6,6 +6,7 @@ import turtle
 import math
 turtle.screensize(1000,800)
 
+
 def rhombus(x, y, a, b):
     '''
     Function, drawing rhombus.
@@ -31,6 +32,7 @@ def rhombus(x, y, a, b):
     turtle.left(b1)
     turtle.down()
     turtle.end_fill()
+
 
 def parallelogram(x, y, a, b, c):
     '''
@@ -59,6 +61,7 @@ def parallelogram(x, y, a, b, c):
     turtle.down()
     turtle.end_fill()
 
+
 def triangle_ravnostoron(x, y, a):
     '''
     Function, drawing triangle_ravnostoron.
@@ -76,6 +79,7 @@ def triangle_ravnostoron(x, y, a):
         turtle.forward(a)
         turtle.left(120)
     turtle.end_fill()
+
 
 def triangle_ravnobedren(x, y, a, b):
     '''
@@ -101,6 +105,7 @@ def triangle_ravnobedren(x, y, a, b):
     turtle.end_fill()
     turtle.left(180-angle)
 
+
 def square(x, y, a):
     '''
     Function, drawing square.
@@ -123,6 +128,7 @@ def square(x, y, a):
     turtle.forward(a)
     turtle.right(90)
     turtle.end_fill()
+
 
 def rectangle(x, y, a, b):
     '''
@@ -148,6 +154,7 @@ def rectangle(x, y, a, b):
     turtle.right(90)
     turtle.end_fill()
 
+
 def triangle_pryamougoln(x, y, a, b):
     '''
     Function, drawing triangle_pryamougoln.
@@ -171,24 +178,25 @@ def triangle_pryamougoln(x, y, a, b):
     turtle.forward(h)
     turtle.end_fill()
 
+
 def dog():
     '''
     Dog function.
     :return: None
     '''
     turtle.setheading(0)
-    triangle_pryamougoln(-150,-300,75, 75)
+    triangle_pryamougoln(-150, -300,75, 75)
     turtle.setheading(0)
-    triangle_pryamougoln(-75,-225,150,150)
+    triangle_pryamougoln(-75, -225,150,150)
     turtle.right(45)
-    triangle_pryamougoln(0,-150,150,150)
+    triangle_pryamougoln(0, -150,150,150)
     turtle.left(90)
-    triangle_ravnobedren(-150,-150,100,65)
+    triangle_ravnobedren(-150, -150,100,65)
     turtle.setheading(0)
     square(0,-225,75)
-    triangle_ravnobedren(75,-150,100,75)
+    triangle_ravnobedren(75, -150,100,75)
     turtle.setheading(48)
-    parallelogram(75,-150,75,75,42)
+    parallelogram(75, -150,75,75,42)
 
 def bird():
     '''
@@ -215,7 +223,7 @@ def candle():
     turtle.setheading(90)
     triangle_pryamougoln(590, -200, 100,240 )
     turtle.setheading(60)
-    rhombus(470,-100, 60, 60)
+    rhombus(470, -100, 60, 60)
 
 def fish():
     '''
