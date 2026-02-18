@@ -1,5 +1,5 @@
 # Case-study #1
-# Developers: Eliseeva A., Kovalenko A., Leonva A.
+# Developers: Eliseeva A., Kovalenko A., Leonova A.
 #
 
 import turtle
