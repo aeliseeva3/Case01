@@ -32,7 +32,6 @@ def rhombus(x, y, a, b):
     turtle.left(b)
     turtle.forward(a)
     turtle.left(b1)
-    turtle.down()
     turtle.end_fill()
 
 
@@ -60,7 +59,6 @@ def parallelogram(x, y, a, b, c):
     turtle.left(c)
     turtle.forward(b)
     turtle.left(c1)
-    turtle.down()
     turtle.end_fill()
 
 
